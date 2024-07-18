@@ -28,3 +28,10 @@ jobs:
         run: npm run test
       
       # Add deployment commands here
+
+      - name: SonarCloud Scan
+        run: npm run sonar
+
+      - name: SonarCloud Quality Gate
+        run: npm run sonar:check
+               
